@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LottieKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LottieKit.'
+  s.summary          = 'LottieKit.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,19 +24,20 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/kjaylee/LottieKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kjaylee' => 'F000000066@wemakeprice.com' }
+  s.author           = { 'kjaylee' => 'k.jaylee@gmail.com' }
   s.source           = { :git => 'https://github.com/kjaylee/LottieKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/kjaylee'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'LottieKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LottieKit' => ['LottieKit/Assets/*.png']
-  # }
-
+  s.resource_bundles = {
+     'LottieKit' => ['LottieKit/Assets/ModernPictograms/*.json']
+  }
+  s.swift_version = '4.0'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
 end
